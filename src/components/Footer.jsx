@@ -1,11 +1,14 @@
 import styled from "styled-components"
-
+import React from "react";
 
 export default function Footer() {
+    const [numFinalizadas, setNumFinalizadas] = React.useState(0)
     return (
-        <SCFooter>
-            <p>X/4 concluídos</p>
-        </SCFooter>
+        <div data-test="footer">
+            <SCFooter>
+                <p>{numFinalizadas}/4 concluídos</p>
+            </SCFooter>
+        </div>
     );
 };
 
