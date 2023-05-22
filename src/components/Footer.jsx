@@ -4,11 +4,9 @@ import React from "react";
 export default function Footer() {
     const [numFinalizadas, setNumFinalizadas] = React.useState(0)
     return (
-        <div data-test="footer">
-            <SCFooter>
+            <SCFooter data-test="footer">
                 <p>{numFinalizadas}/4 concluídos</p>
             </SCFooter>
-        </div>
     );
 };
 

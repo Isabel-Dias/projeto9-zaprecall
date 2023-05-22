@@ -13,12 +13,12 @@ export default function FlashCard(props) {
     const [datatest, setDataTest] = React.useState("play-btn")
 
     return (
-        <div data-test="flashcard">
-            <SCFlashCard>
+        <>
+            <SCFlashCard div data-test="flashcard">
                 <p data-test="flashcard-text" >{text}</p>
                 <img data-test={datatest} onClick={() => selectCard(index)} src={nameButton} alt="button-play" />
             </SCFlashCard>
-        </div>
+        </>
         
     );
     
